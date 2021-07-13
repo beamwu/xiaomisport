@@ -68,7 +68,7 @@ def main(user, passwd, step):
     
     if step == '':
         print ("已设置为随机步数（10000-19999）")
-        step = str(random.randint(10000,19999))
+        step = str(random.randint(10000,69999))
     login_token = 0
     login_token,userid = login(user,password)
     if login_token == 0:
@@ -142,15 +142,15 @@ def push_wx(sckey, desp=""):
 
 if __name__ ==  "__main__":
     # ServerChan
-    sckey = input()
+    sckey = 'SCT50813Tw4NhKrj5Mx7FOezoSvr5kL78'
     if str(sckey) == '0':
         sckey = ''
     # 用户名（格式为 13800138000）
-    user = input()
+    user = '16628722003'
     # 登录密码
-    passwd = input()
+    passwd = 'Dream1989'
     # 要修改的步数，直接输入想要修改的步数值，留空为随机步数
-    step = input()
+    step = '30000-80000'
 
     user_list = user.split('#')
     passwd_list = passwd.split('#')
